@@ -1,11 +1,12 @@
 def right_increase_triangle(n: int) -> None:
-    for col in range(n):
-        for row in range(0, n-col):
-            if row >= col:
-                print(" ", end='')
+    for row in range(1, n):
+        for col in range(1, n+1):
+            if (col <= n-row):
+                print('*', end='')
             else:
-                print("*", end='')
+                print(" ", end='')
         print()
 
 
+print("Start")
 right_increase_triangle(10)
