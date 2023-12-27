@@ -1,3 +1,19 @@
+'''
+
+*********
+********
+*******
+******
+*****
+****
+***
+**
+*
+
+
+'''
+
+
 def right_increase_triangle(n: int) -> None:
     for row in range(1, n):
         for col in range(1, n+1):
