@@ -1,26 +1,25 @@
-n = int(input())
+# n = int(input())
 
 
 def check_prime(n: int):
     for i in range(2, n):
-        if n % 2 == 0:
+        if n % i == 0:
             return False
     return True
 
 
 def main(n):
-    sum = 1
-    if n <= 0:
+    count_prime = 0
+    if n <= 1:
         # print(0)
         return 0
-    elif n == 1:
-        # print(1)
-        return sum
 
     for i in range(2, n):
         if check_prime(i):
-            sum += i
-    return sum
+            # print(F"Prime Number {i}")
+            count_prime += 1
+    return count_prime
 
 
-print(main(n))
+for i in range(100):
+    print(i, main(i))
