@@ -13,7 +13,7 @@ def star_trangle2(n: int) -> None:
         for col in range(1, n+row+1):
             if (col >= n-row):
                 print('*', end='')
-            else:
+            else:1
                 print(' ', end='')
 
         print()
